@@ -11,25 +11,22 @@ library(KernSmooth)
 library(MVA)
 load(file = "Correlations.RData")
 ```
-**Question 1.a**  
 
-Print the data showing the park names, park sizes and visitors.
+Park names, park sizes and visitors printed below:
 ```{r, include=TRUE}
 parks
 ```
-*Printed Data showing park names, park sizes, and visitors.*
-\hfill\break\hfill\break
-**Question 1.b**\hfill\break
-Obtain and show the sample covariance matrix and the sample correlation matrix. Interpret the sample correlation matrix. How does the correlation matrix differ from the Pearson's correlation coefficient?
+The sample covariance matrix and the sample correlation matrix and interpretations:   
 ```{r}
 cov(parks)
 ```
-*Covariance matrix, Parks data*
+*Covariance matrix, Parks data*  
+
 ```{r}
 cor(parks)
 ```
-*Correlation Matrix, Parks Data*
-\hfill\break\hfill\break
+*Correlation Matrix, Parks Data*  
+
 The correlation matrix displays the Pearson correlation coefficient between two variables to demonstrate how strongly those variables are related to each other. As the scaled form of covariance, correlation coefficients are standardized (non-scalar) and dimensionless (unit-free), and can thus be interpreted easily on a scale from -1 to +1. Covariance values vary from negative infinity to positive infinity. While covariance indicates the direction of the relationship only, correlation indicates direction and strength, resulting in a proportion metric measuring how much on average these variables differ with regard to one another. </br>
 
 Because the covariance matrix isn't scaled, we can only interpret direction. The size of the park is measured on a different scale than the visitor count, so interpretation regarding strength of the direction is not appropriate using the covariance matrix. 
