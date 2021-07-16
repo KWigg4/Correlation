@@ -1,6 +1,6 @@
 ---
-title: "KW_HW1_SRM610"
-author: "Kim Wiggins // SRM 610 HW1 // July 01, 21"
+title: "Correlations"
+author: "Kim Wiggins"
 output:
   pdf_document: default
 Date: July 4, 2021
@@ -9,9 +9,10 @@ Date: July 4, 2021
 ```{r libraries, include=FALSE}
 library(KernSmooth)
 library(MVA)
-load(file = "HW1.RData")
+load(file = "Correlations.RData")
 ```
-**Question 1.a** \hfill\break
+**Question 1.a**  
+
 Print the data showing the park names, park sizes and visitors.
 ```{r, include=TRUE}
 parks
